@@ -1,10 +1,23 @@
-s=input("Enter any string: ")
+# Take input from user
+s = input("Enter any string: ")
+
+# Split string into words
 w = s.split()
+
+# Create empty dictionary
 f = {}
-for word in w :
+
+# Check each word
+for word in w:
+
+    # Check if word is already present
     if word in f:
-        f[word]+=1
+        f[word] += 1
+
+    # If word is not present
     else:
-        f[word]=1
-for word , count in f.items():
-    print(word,":",count)            
+        f[word] = 1
+
+# Print words and their counts
+for word, count in f.items():
+    print(word, ":", count)
