@@ -1,0 +1,5 @@
+s=input("Enter any string: ")
+print("First 3 Character",s[:3])
+print("Last 2 Character",s[-2:])
+print("Every 2nd Character",s[::2])
+print("Reversed",s[::-1])
